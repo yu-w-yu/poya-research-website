@@ -2,27 +2,19 @@
 
 這是一個單頁式課堂研究報告網站，主題是「寶雅 POYA 數位轉型是否真正創造顧客經營價值？」。
 
-## 啟動
+## 網站檔案
 
-```powershell
-.\start_app.ps1
-```
+網站本體位於 `static/`，可直接部署到 GitHub Pages。
 
-如果 Windows PowerShell 執行原則封鎖 `.ps1`，可改用：
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\start_app.ps1
-```
-
-開啟：
+若只想在本機預覽，也可以直接用瀏覽器開啟：
 
 ```text
-http://127.0.0.1:8765
+static/index.html
 ```
 
 ## 部署到 GitHub Pages
 
-這個網站本體是 `static/` 裡的純靜態檔案，因此可以用 GitHub Pages 上線，不需要在 GitHub 上跑 `server.py`。
+這個網站本體是 `static/` 裡的純靜態檔案，因此可以用 GitHub Pages 上線，不需要伺服器後端。
 
 1. 在 GitHub 建立一個新 repository。
 2. 把這個資料夾推到 GitHub，主要分支請使用 `main`。
